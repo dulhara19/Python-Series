@@ -12,9 +12,10 @@ book ['book2'] = {
 
 print(book)
 print(book["book1"])
+
 import json
-json.dumps(book)
-s=json.dumps(book, indent=4)
+
+s=json.dumps(book)
 print(s)
 
 
