@@ -9,3 +9,5 @@ book ['book2'] = {
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "price": 29.99}
+
+print(book)
