@@ -11,3 +11,4 @@ book ['book2'] = {
     "price": 29.99}
 
 print(book)
+print(book.book1)
