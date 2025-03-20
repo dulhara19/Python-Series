@@ -11,7 +11,7 @@ book ['book2'] = {
     "price": 29.99}
 
 print(book)
-print(book.book1)
+print(book["book1"])
 import json
 json.dumps(book)
 print(json.dumps(book))
