@@ -18,4 +18,5 @@ import json
 s=json.dumps(book)
 print(s)
 
+print(json.dumps(book, indent=4))
 
