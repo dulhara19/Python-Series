@@ -14,5 +14,7 @@ print(book)
 print(book["book1"])
 import json
 json.dumps(book)
-json.dumps(book, indent=4)
-print(json.dumps(book, indent=4))
+s=json.dumps(book, indent=4)
+print(s)
+
+
