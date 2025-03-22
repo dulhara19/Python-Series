@@ -15,8 +15,10 @@ f=open("C:\\AI-projects\\new.txt","r+")
 
 
 for line in f:
-    tokens = line.split()
+    tokens = line.split('o') #split the line by letter 'o'
     print(tokens)
-    
+    print(len(tokens)) #print the length of the tokens
+    print(tokens[0]) #print the first token
+
 #close the file
 f.close() 
