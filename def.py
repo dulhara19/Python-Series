@@ -3,3 +3,4 @@ def calcarea(r,h):
 
 result = calcarea(5,10)
 print(result) #785.0
+print(calcarea(5,10)) #785.0
