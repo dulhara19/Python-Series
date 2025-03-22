@@ -17,3 +17,9 @@ print(x)
 
 d.pop("tom")
 print(d)
+
+d.popitem()
+print(d)
+
+y= "tom" in d
+print(y)
