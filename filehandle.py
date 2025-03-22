@@ -27,4 +27,4 @@ for line in f:
 
 #close the file
 f.close() 
-fnew.close()
+fnew.close()  
