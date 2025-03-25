@@ -1,4 +1,7 @@
 class item:
+    
+    pay_rate= 0.8 # 20% discount to all items
+
     def __init__(self, name, price, quantity):
 
         assert isinstance(name, str), "name must be a string"
