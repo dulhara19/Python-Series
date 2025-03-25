@@ -33,3 +33,6 @@ item2 = item("samsung", 15000, 3)
 print(item.pay_rate)
 print(item1.pay_rate)
 print(item2.pay_rate)
+
+print(item.__dict__) # __dict__ is a dictionary that contains all the attributes of the class
+print(item2.__dict__)# __dict__ is a dictionary that contains all the attributes of the instance level
