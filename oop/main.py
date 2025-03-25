@@ -30,4 +30,4 @@ item2 = item("samsung", 15000, 3)
 # item2.quantity = 3
 #print(item2.calculate_total_price(item2.name,item2.price,item2.quantity))
 
-
+print(item.pay_rate)
