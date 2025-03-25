@@ -39,3 +39,6 @@ print(item2.pay_rate)
 
 print(item.__dict__) # __dict__ is a dictionary that contains all the attributes of the class
 print(item2.__dict__)# __dict__ is a dictionary that contains all the attributes of the instance level
+
+item1.apply_discount()
+print(item1.price)
