@@ -14,6 +14,9 @@ class item:
         
     def calculate_total_price(self):
         return self.price * self.quantity
+    
+    def apply_discount(self):
+        self.price = self.price * item.pay_rate
 
 
 
