@@ -21,6 +21,9 @@ class item:
     def apply_increment(self, increment_value):
         self.price = self.price + self.price * increment_value
 
+    def set_pay_rate(self, new_pay_rate):
+        self.pay_rate = new_pay_rate
+
 
 
 item1 = item("apple", 12000, 2)
