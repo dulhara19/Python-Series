@@ -57,3 +57,5 @@ print(item1.price)
 item1.pay_rate = 0.9
 print(item1.pay_rate)
 
+item3 = item("apple", 10000, 1)
+item4 = item("samsung", 15000, 2)
