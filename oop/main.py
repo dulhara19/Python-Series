@@ -18,6 +18,9 @@ class item:
     def apply_discount(self):
         self.price = self.price * item.pay_rate
 
+    def apply_increment(self, increment_value):
+        self.price = self.price + self.price * increment_value
+
 
 
 item1 = item("apple", 12000, 2)
@@ -45,3 +48,4 @@ print(item1.price)
 
 item1.pay_rate = 0.9
 print(item1.pay_rate)
+
