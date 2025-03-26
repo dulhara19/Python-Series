@@ -62,3 +62,5 @@ print(item1.pay_rate)
 item3 = item("apple", 10000, 1)
 item4 = item("samsung", 15000, 2)
 item5 = item("apple", 10000, 1)
+
+print(item.all)
