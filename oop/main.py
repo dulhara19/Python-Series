@@ -42,3 +42,6 @@ print(item2.__dict__)# __dict__ is a dictionary that contains all the attributes
 
 item1.apply_discount()
 print(item1.price)
+
+item1.pay_rate = 0.9
+print(item1.pay_rate)
