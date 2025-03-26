@@ -24,6 +24,9 @@ class item:
     def set_pay_rate(self, new_pay_rate):
         self.pay_rate = new_pay_rate
 
+    def __repr__(self):
+        return f"Item('{self.name}', {self.price}, {self.quantity})"
+
 
 
 item1 = item("apple", 12000, 2)
