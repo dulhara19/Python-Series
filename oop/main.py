@@ -13,6 +13,8 @@ class item:
         self.name = name
         self.price = price
         self.quantity = quantity
+
+        item.all.append(self)
         
     def calculate_total_price(self):
         return self.price * self.quantity
@@ -59,3 +61,4 @@ print(item1.pay_rate)
 
 item3 = item("apple", 10000, 1)
 item4 = item("samsung", 15000, 2)
+item5 = item("apple", 10000, 1)
