@@ -27,8 +27,9 @@ class item:
 
     def set_pay_rate(self, new_pay_rate):
         self.pay_rate = new_pay_rate
-
-    def instantiate_from_csv(self):    
+    @classmethod
+    def instantiate_feom_csv(cls, csv_string):
+        name, price, quantity = csv_string.split(",")  
 
     def __repr__(self):
         return f"Item('{self.name}',{self.price}, {self.quantity})" # f-string
