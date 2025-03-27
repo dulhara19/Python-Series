@@ -40,6 +40,9 @@ class item:
             #     instance = cls(name, price, quantity)
             #     print(instance.name, instance.price, instance.quantity)
 
+         for item in items:
+            print(item)
+
     def __repr__(self):
         return f"Item('{self.name}',{self.price}, {self.quantity})" # f-string
 
