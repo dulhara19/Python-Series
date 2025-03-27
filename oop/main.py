@@ -46,21 +46,24 @@ item2 = item("samsung", 15000, 3)
 # item2.quantity = 3
 #print(item2.calculate_total_price(item2.name,item2.price,item2.quantity))
 
-print(item.pay_rate)
-print(item1.pay_rate)
-print(item2.pay_rate)
+# print(item.pay_rate)
+# print(item1.pay_rate)
+# print(item2.pay_rate)
 
-print(item.__dict__) # __dict__ is a dictionary that contains all the attributes of the class
-print(item2.__dict__)# __dict__ is a dictionary that contains all the attributes of the instance level
+# print(item.__dict__) # __dict__ is a dictionary that contains all the attributes of the class
+# print(item2.__dict__)# __dict__ is a dictionary that contains all the attributes of the instance level
 
-item1.apply_discount()
-print(item1.price)
+# item1.apply_discount()
+# print(item1.price)
 
-item1.pay_rate = 0.9
-print(item1.pay_rate)
+# item1.pay_rate = 0.9
+# print(item1.pay_rate)
 
 item3 = item("apple", 10000, 1)
 item4 = item("samsung", 15000, 2)
-item5 = item("apple", 10000, 1)
+item5 = item("apple", 10000, 1) 
 
-print(item.all)
+# print(item.all)
+
+for instance in item.all:
+    print(instance.name, instance.price, instance.quantity)
