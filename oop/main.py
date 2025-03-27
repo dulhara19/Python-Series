@@ -29,7 +29,7 @@ class item:
         self.pay_rate = new_pay_rate
 
     def __repr__(self):
-        return f"Item('{self.name}', {self.price}, {self.quantity})"
+        return f"Item('{self.name}',{self.price}, {self.quantity})" # f-string
 
 
 
