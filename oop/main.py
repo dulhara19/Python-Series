@@ -1,3 +1,4 @@
+import csv
 class item:
     
     pay_rate= 0.8 # 20% discount to all items
@@ -28,8 +29,16 @@ class item:
     def set_pay_rate(self, new_pay_rate):
         self.pay_rate = new_pay_rate
     @classmethod
-    def instantiate_feom_csv(cls, csv_string):
-        name, price, quantity = csv_string.split(",")  
+    def instantiate_feom_csv(cls):
+         with open('data.csv', 'r') as file:
+            reader = csv.DictReader(file)
+            items =list(reader)
+            # for row in reader:
+            #     name = row['name']
+            #     price = row['price']
+            #     quantity = row['quantity']
+            #     instance = cls(name, price, quantity)
+            #     print(instance.name, instance.price, instance.quantity)
 
     def __repr__(self):
         return f"Item('{self.name}',{self.price}, {self.quantity})" # f-string
@@ -68,5 +77,7 @@ item2 = item("samsung", 15000, 3)
 
 # print(item.all)
 
-for instance in item.all:
-    print(instance.name, instance.price, instance.quantity)
+# for instance in item.all:
+#     print(instance.name, instance.price, instance.quantity)
+
+item.instantiate_feom_csv("orange, 2000, 5")  
