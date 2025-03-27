@@ -28,6 +28,8 @@ class item:
     def set_pay_rate(self, new_pay_rate):
         self.pay_rate = new_pay_rate
 
+    def instantiate_from_csv(self):    
+
     def __repr__(self):
         return f"Item('{self.name}',{self.price}, {self.quantity})" # f-string
 
@@ -59,9 +61,9 @@ item2 = item("samsung", 15000, 3)
 # item1.pay_rate = 0.9
 # print(item1.pay_rate)
 
-item3 = item("apple", 10000, 1)
-item4 = item("samsung", 15000, 2)
-item5 = item("apple", 10000, 1) 
+# item3 = item("apple", 10000, 1)
+# item4 = item("samsung", 15000, 2)
+# item5 = item("apple", 10000, 1) 
 
 # print(item.all)
 
